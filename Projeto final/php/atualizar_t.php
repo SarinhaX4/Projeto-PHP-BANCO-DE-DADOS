@@ -3,12 +3,12 @@
     include("conexao.php");
 
     $id_tarefa = $_GET['id_t'];
-    $titulo_t = $_POST['i_titulo'];
-    $descricao_t = $_POST['i_descricao'];
+    $tarefa_t = $_POST['i_tarefa'];
+    $tipo_t = $_POST['i_tipo'];
     $status_t = $_POST['i_status'];
+    $descricao_t = $_POST['i_descricao'];
 
-    $query_1 = "update tarefa set titulo = '{$titulo_t}', descricao = '{$descricao_t}', 
-                status_tarefa = '{$status_t}' where id_tarefa = '{$id_tarefa}'";
+    $query_1 = "update tarefa set titulo = '{$tarefa_t}',status_tarefa = '{$status_t}' where id_tarefa = '{$id_tarefa}', descricao = '{$descricao_t}'";
     
     if(mysqli_query($conexao, $query_1)){
         header('Location: listar_t.php');

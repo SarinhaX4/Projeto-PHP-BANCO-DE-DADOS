@@ -1,20 +1,5 @@
 <?php
-
-    session_start();
-    include("conexao.php");
-
-    if(isset($_SESSION['usuario'])){
-
-        $id = $_SESSION['usuario'];
-        $query_1 = "select * from usuario where id_usuario = '{$id}'";
-        $resposta = mysqli_query($conexao, $query_1);
-
-        $row = mysqli_fetch_assoc($resposta);
-
-    }else{
-        header('Location: ../index.php');
-    }
-
+    include("verifica_usuario.php");    
 ?>
 
 <html>
@@ -29,8 +14,9 @@
         <nav>
             <ul>
                 <li> <img class="avatar" src=" <?php echo $row['foto'] ?> "> </li>
-                <li> <a href="">Perfil</a> </li>
-                <li> <a href="">Nova tarefa</a> </li>
+                <li> <a href="perfil.php">Perfil</a> </li>
+                <li> <a href="nova_atividade.php">Nova atividade</a> </li>
+                <li> <a href="listar_t.php">Lista de atividades</a> </li>
                 <li id="btt_sair"> <a href="logout.php">Sair</a> </li>
             </ul>
         </nav>
