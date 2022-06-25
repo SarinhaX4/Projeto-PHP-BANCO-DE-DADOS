@@ -1,18 +1,49 @@
+@import url(esti_global.css);
+
+body{
+    background-color: var(--bg_painel);
+}
 header{
     text-align: center;
 }
-.boxes a{
-    background-color: blueviolet;
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.box_1,.box_2, img:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: var(--bg-menu-hover);
+}
+.box_1, .box_2, img{
+    cursor: pointer;
+    background-color: var(--bg_form);
     width: 300px;
     height: 300px;
     display: inline-block;
     align-items: center;
-    margin: 100px 0px 100px 100px;
     border-radius: 7px;
     line-height: center;
 }
-.boxes a:hover{
-    cursor: pointer;
-    transition: 0.5s;
+.box_1, .box_2{
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    color: black;
+    padding: -10px;
+    font-weight: bold;
+}
+.box_1 a{
+    color: black;
+    background-color:rgba(114, 31, 190, 0.37);
+}
+.box_2 a{
+    color: black;
+    background-color:rgba(114, 31, 190, 0.37);
+}
+.btt_voltar{
+    padding: 10px;
     background-color: var(--bg-menu-hover);
+    color: black;
 }

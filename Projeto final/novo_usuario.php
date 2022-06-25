@@ -34,7 +34,7 @@
 
                 <input type="text" name="i_nome" class="i_text" placeholder="Nome" required>
 
-                <input type="text" name="i_nome" class="i_text" placeholder="Sobrenome" required>
+                <input type="text" name="i_sobrenome" class="i_text" placeholder="Sobrenome" required>
 
                 <input type="text" name="i_usuario" class="i_text" placeholder="Usuário" required>
          

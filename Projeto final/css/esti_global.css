@@ -5,16 +5,20 @@ body{
 }
 :root{
     --bg-site:#5829b66c;
-    --bg_menu:#582dade5; 
-    --bg_form:#3E0E9D;
+    --bg_menu:#351379; 
+    --bg_form:#4916af;
+    --bg_painel:#7937ff1f;
     /* --bg-hover:#2f0a79; */
-    --bg-menu-hover: #854df5;
+    --bg-menu-hover: rgb(104, 58, 197);
     --color-form: white;
     --bg-btt:#5c2db9ee;
-    --color-btt:black;
+    --color-btt:white;
     --btt-hover:#000000a9;
     --bg-errobox:rgb(218, 26, 26);
     --color-i_text: black;
     --border_avatar: #FFFFFF;
-
+    --light_text: #FFFFFF;
+    --st_pen: #aa1400;
+    --st_ini: #f8e919;
+    --st_con: #18c74a;
 }

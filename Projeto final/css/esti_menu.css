@@ -16,30 +16,46 @@ ul{
 
 li{
     float: left;
+    padding: 40px -4px 10px 50px;
 }
 
-li a{
+a{
     display: block;
-    color: black;
-    text-align: center;
-    padding: 20px 18px;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
     text-decoration: none;
     transition: 0.5s;
 }
+#perfil{
+    margin: 13px;
+}
 
-li a:hover{
+a:hover{
     transition: 0.5s;
     background-color: var(--bg-menu-hover);
 }
 
 #btt_sair{
     float: right;
+    margin: 10px 30px 0px 50px;
+}
+#logo img{
+    width: 35px;
+    height: 35px;
+    margin: 0px 30px 10px 30px;
+    text-align: center;
+}
+#logo h2{
+    font-size: 15px;
 }
 .avatar{
     vertical-align: middle;
     width: 55px;
+    text-align: center;
+    float: center;
     height: 55px;
     border-radius: 50%;
     border: 2px solid black;
-    margin: 0px 10px 0px 10px;
+    margin-left: 150px;
 }

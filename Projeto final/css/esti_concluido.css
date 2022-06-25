@@ -1,0 +1,14 @@
+@import url(esti_global.css);
+
+.box{
+    margin: auto;
+    text-align: center;
+    background-color: var(--bg_form);
+    padding: 20px;
+    width: max-content;
+}
+.btt_voltar{
+    padding: 10px;
+    background-color: var(--bg-menu-hover);
+    color: black;
+}
