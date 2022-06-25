@@ -1,9 +1,9 @@
-@import url("es_global.css");
+@import url("esti_global.css");
 
 body{
     margin: 0px;
     padding: 0px;
-    background-color: var(--bg-site);
+    /* background-color: var(--bg-site); */
 }
 
 ul{
@@ -20,7 +20,7 @@ li{
 
 li a{
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px 18px;
     text-decoration: none;
@@ -29,18 +29,17 @@ li a{
 
 li a:hover{
     transition: 0.5s;
-    background-color: var(--bg-hover);
+    background-color: var(--bg-menu-hover);
 }
 
 #btt_sair{
     float: right;
 }
-
 .avatar{
     vertical-align: middle;
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    border: 2px solid var(--border_avatar);
+    border: 2px solid black;
     margin: 0px 10px 0px 10px;
 }

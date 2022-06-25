@@ -7,6 +7,7 @@
     <head>
         <title>Perfil</title>
         <meta charset="utf-8">
+        <link rel="icon" href="../icons/book.png">
         <link rel="stylesheet" href="../css/esti_perfil.css">
     </head>
 

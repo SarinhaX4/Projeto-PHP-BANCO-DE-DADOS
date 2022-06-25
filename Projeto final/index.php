@@ -5,9 +5,19 @@
     <head>
         <title>Login</title>
         <meta charset="utf-8">
+        <link rel="icon" href="icons/book.png">
         <link rel="stylesheet" href="css/esti_form.css">
+        <link rel="stylesheet" href="css/esti_navgeral.css">
     </head>
     <body>
+        <nav>
+            <div id="logo">
+                <div>
+                    <a href="index.php"><img src="icons/book.png"/></a>
+                </div>
+                <a href="Index.php"><h2>studies in order</h2></a>
+            </div>
+        </nav>
         <main>
         <form action="php/login.php" method="post">
             <div class="form_box" id="form_box">

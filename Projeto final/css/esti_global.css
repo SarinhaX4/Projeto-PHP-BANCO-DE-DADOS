@@ -4,12 +4,13 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 :root{
-    --bg-site:#b2dfdf6b;
-    --bg_menu:#1fb8b8; 
-    --bg_form:#1fb8b8;
-    --bg-hover:#208181;
+    --bg-site:#5829b66c;
+    --bg_menu:#582dade5; 
+    --bg_form:#3E0E9D;
+    /* --bg-hover:#2f0a79; */
+    --bg-menu-hover: #854df5;
     --color-form: white;
-    --bg-btt:#9acece;
+    --bg-btt:#5c2db9ee;
     --color-btt:black;
     --btt-hover:#000000a9;
     --bg-errobox:rgb(218, 26, 26);

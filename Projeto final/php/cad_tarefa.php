@@ -13,7 +13,7 @@
         $descricao_t = $_POST['i_descricao'];
 
         $query_1 = "insert into tarefa (fk_usuario, titulo, tipo, status_tarefa, descricao, data_cadastro)
-                    values ('{$fk_usuario}', '{$tarefa_t}', '{$tipo_t}','{$status_t}','{$descricao_t}', NOW())";
+        values ('{$fk_usuario}', '{$tarefa_t}', '{$tipo_t}', '{$status_t}',  '{$descricao_t}', NOW() )";
 
         mysqli_query($conexao, $query_1);
 
@@ -28,6 +28,7 @@
     <head>
         <title>Cadastro concluído</title>
         <meta charset="utf-8">
+        <link rel="icon" href="../icons/book.png">
         <link rel="stylesheet" href="../css/esti_concluido.css">
     </head>
 

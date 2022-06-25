@@ -1,0 +1,18 @@
+header{
+    text-align: center;
+}
+.boxes a{
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    align-items: center;
+    margin: 100px 0px 100px 100px;
+    border-radius: 7px;
+    line-height: center;
+}
+.boxes a:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: var(--bg-menu-hover);
+}
