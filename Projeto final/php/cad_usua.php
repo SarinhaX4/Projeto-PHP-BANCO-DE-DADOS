@@ -1,5 +1,4 @@
 <?php
-
     session_start();
     include("conexao.php");
 
@@ -7,15 +6,14 @@
     $sobrenome = $_POST['i_sobrenome'];
     $usuario = $_POST['i_usuario'];
     $senha = $_POST['i_senha'];
-    $foto = $_FILES['i_image'];
+    $foto = $_FILES['i_foto'];
 
     $query_1 = "select * from usuario where login = '{$usuario}'";
     $resposta = mysqli_query($conexao, $query_1);
     $row = mysqli_num_rows($resposta);
 
-
     if($row == 1){
-        $_SESSION['nao_usuario'] = true;
+        $_SESSION['not_usuario'] = true;
         echo "<script> javascript:history.go(-1) </script>";
     }else{
         
@@ -35,23 +33,31 @@
                     mysqli_query($conexao, $query_2);
                 }
             }else{
-                $_SESSION['nao_arquivo'] = true;
+                $_SESSION['not_arquivo'] = true;
                 echo "<script> javascript:history.go(-1) </script>";
             }
         }else{
-            $_SESSION['nao_arquivo'] = true;
+            $_SESSION['not_arquivo'] = true;
             echo "<script> javascript:history.go(-1) </script>";
         }
+
     }
+
 ?>
 
 <html>
+
     <head>
         <title>Cadastro concluído</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/es_concluido.css">
     </head>
+
     <body>
-        <h1>Cadastro concluído!</h1>
-        Faça o login <a href="../index.php">aqui!</a>
+        <div class="box">
+            <h1>Cadastro concluído!</h1>
+            Faça o login <a href="../index.php">aqui!</a>
+        </div>
     </body>
+
 </html>
